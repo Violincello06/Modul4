@@ -60,30 +60,44 @@ while($user_data = mysqli_fetch_array($result))
             </div>
             <div class="page-content">
                 <section class="row">
-             <form name="update_user" method="post" action="editfile.php">
-        <table border="0">
-            <tr> 
-                <td>Nama Alat</td>
-                <td><input type="text" name="nama_alat" value=<?php echo $nama_alat;?>></td>
-            </tr>
-            <tr> 
-                <td>Tahun</td>
-                <td><input type="text" name="tahun" value=<?php echo $tahun;?>></td>
-            </tr>
-            <tr> 
-                <td>Merek</td>
-                <td><input type="text" name="merek" value=<?php echo $merek;?>></td>
-            </tr>
-             <tr> 
-                <td>Lokasi</td>
-                <td><input type="text" name="lokasi" value=<?php echo $lokasi;?>></td>
-            </tr>
-            <tr>
-                <td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
-                <td><input type="submit" name="update" value="Update"></td>
-            </tr>
-        </table>
-    </form>
+                <section id="basic-vertical-layouts">
+                    <div class="row match-height">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Edit Alat</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <form name="update_user" method="post" action="editfile.php" class="form form-vertical">
+                                            <div class="form-body">
+                                                <div class="form-group">
+                                                    <label for="first-name-vertical">Nama Alat</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="nama_alat" value="<?php echo $nama_alat;?>" placeholder="Nama Alat">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="first-name-vertical">Tahun</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="tahun" value="<?php echo $tahun;?>" placeholder="Tahun">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="first-name-vertical">Merek</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="merek" value="<?php echo $merek;?>" placeholder="Tuliskan Merek Alat">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="first-name-vertical">Lokasi</label>
+                                                    <input type="text" id="first-name-vertical" class="form-control" name="lokasi" value="<?php echo $lokasi;?>" placeholder="Tuliskan Lokasi Alat">
+                                                </div>
+                                                <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
+                                                <button type="submit" class="btn btn-primary me-1 mb-1" name="update" value="Update">Update</button>
+                                                <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
     <?php
 
