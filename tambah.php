@@ -19,29 +19,46 @@
             </div>
             <div class="page-content">
                 <section class="row">
-             <form action="tambah.php" method="post" name="form1">
-        <table width="25%" border="0">
-            <tr> 
-                <td>Nama Alat</td>
-                <td><input type="text" name="nama_alat"></td>
-            </tr>
-            <tr> 
-                <td>Tahun</td>
-                <td><input type="text" name="tahun"></td>
-            </tr>
-            <tr> 
-                <td>Merek</td>
-                <td><input type="text" name="merek"></td>
-            </tr>
-             <tr> 
-                <td>Lokasi</td>
-                <td><input type="text" name="lokasi"></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td><input type="submit" name="Submit" value="Add"></td>
-            </tr>
-        </table>
+                <section id="basic-vertical-layouts">
+                    <div class="row match-height">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Vertical Form</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                    
+                                            <form action="tambah.php" method="post" name="form1" class="form form-vertical">
+                                            <div class="form-body">
+                                                 <div class="form-group">
+                                                            <label for="first-name-vertical">Nama Alat</label>
+                                                            <input type="text" id="first-name-vertical"
+                                                                class="form-control" name="nama_alat"
+                                                                placeholder="Nama Alat">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">Tahun</label>
+                                                            <input type="text" id="first-name-vertical"
+                                                                class="form-control" name="tahun"
+                                                                placeholder="Tahun">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">Merek</label>
+                                                            <input type="text" id="first-name-vertical"
+                                                                class="form-control" name="merek"
+                                                                placeholder="Tuliskan Merek Alat">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">Lokasi</label>
+                                                            <input type="text" id="first-name-vertical"
+                                                                class="form-control" name="lokasi"
+                                                                placeholder="Tuliskan Lokasi Alat">
+                                                        </div>
+                                                    <button type="submit"
+                                                            class="btn btn-primary me-1 mb-1"  name="Submit" value="Add">Submit</button>
+                                                    <button type="reset"
+                                                            class="btn btn-light-secondary me-1 mb-1">Reset</button>    
     </form>
 
     <?php

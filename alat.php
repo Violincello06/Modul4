@@ -43,7 +43,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM alat ORDER BY id DESC");
         echo "<td>".$user_data['tahun']."</td>";
         echo "<td>".$user_data['merek']."</td>";    
         echo "<td>".$user_data['lokasi']."</td>";    
-        echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>"; 
+        echo "<td><a href='editfile.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>"; 
         $i++;       
     }
     ?>
